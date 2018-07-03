@@ -1,0 +1,23 @@
+<html>
+<head>
+	<title>Home</title>
+</head>
+<body>
+<h1>Word Count</h1>
+{{ "hello  "}} {{fName}}
+
+
+<!--  Note : In form action=" "  we have to give url of the next page on some events like button click    -->
+<!-- <form action="count">  -->
+
+<form action="{% url 'CountWords' %}">
+	<textarea name="txtDesc" id="txtDescption" rows="10" cols="40"></textarea>
+	<br>
+	<button id="btnCount">Count</button>
+	<button id="btnAboutUs" formaction="{% url 'about' %}">AboutUs</button>
+</form>
+
+	
+</form>
+</body>
+</html>

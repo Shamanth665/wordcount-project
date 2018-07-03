@@ -1,0 +1,16 @@
+<html>
+<head>
+	<title>Count-Result</title>
+</head>
+<body>
+	<h1>Total Count !.. of words is {{totalCount}}</h1>
+	<a href="{% url 'home' %}">start again</a>
+	<h3>Your Text</h3>
+	<p>{{fullText}}</p>
+	<h3>Individual counts is </h3>
+	{% for k,v in wordCount%}
+	{{k}}{{" --> "}}{{v}}
+	<br>
+	{% endfor%}
+</body>
+</html>
